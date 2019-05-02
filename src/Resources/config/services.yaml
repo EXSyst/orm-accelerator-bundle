@@ -1,0 +1,5 @@
+services:
+  EXSyst\ORMAcceleratorBundle\Compiler\FastAccessorsCompiler:
+    autowire: true
+    autoconfigure: true
+    public: false

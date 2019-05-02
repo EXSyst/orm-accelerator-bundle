@@ -1,0 +1,23 @@
+{
+  "name": "exsyst/orm-accelerator-bundle",
+  "type": "library",
+  "description": "Non-standalone experiments to make Doctrine ORM faster",
+  "keywords": [],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Exter-N",
+      "email": "exter-n@exter-n.fr"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3",
+    "exsyst/dynamic-class-generation-bundle": "0.1.*",
+    "doctrine/orm": "~2.6|dev-2.6-exsyst"
+  },
+  "autoload": {
+    "psr-4": {
+      "EXSyst\\ORMAcceleratorBundle\\": "src/"
+    }
+  }
+}
