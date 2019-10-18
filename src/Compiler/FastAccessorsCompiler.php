@@ -117,7 +117,7 @@ class FastAccessorsCompiler implements ClassGeneratorInterface
         return \implode("\0", \array_merge(...$chain));
     }
 
-    private function emitGetter(StreamWriter $writer, array &$scope, array $chain): string
+    private static function emitGetter(StreamWriter $writer, array &$scope, array $chain): string
     {
         $key = "get\0".self::serializeChain($chain);
         if (isset($scope[$key])) {
@@ -155,7 +155,7 @@ class FastAccessorsCompiler implements ClassGeneratorInterface
         return $id;
     }
 
-    private function emitSetter(StreamWriter $writer, array &$scope, array $chain): string
+    private static function emitSetter(StreamWriter $writer, array &$scope, array $chain): string
     {
         $key = "set\0".self::serializeChain($chain);
         if (isset($scope[$key])) {
